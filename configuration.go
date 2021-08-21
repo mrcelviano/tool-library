@@ -10,7 +10,8 @@ import (
 var configuration Configuration
 
 type Configuration struct {
-	DataBase DataBase `json:"dataBase"`
+	DataBase     DataBase          `json:"dataBase"`
+	AccessConfig AuthConfiguration `json:"accessConfiguration"`
 }
 
 func GetConfigurationService() Configuration {
