@@ -6,7 +6,7 @@ import (
 	"github.com/mrcelviano/tool-library/dbrsession"
 )
 
-func HTTPDBRSessionPG(db *dbr.Connection) echo.MiddlewareFunc {
+func HTTPDBRSessionPostgres(db *dbr.Connection) echo.MiddlewareFunc {
 	return func(next echo.HandlerFunc) echo.HandlerFunc {
 		return func(c echo.Context) error {
 			req := c.Request()
